@@ -14,10 +14,20 @@ table {
 .name {
   font-size: 2rem;
   font-weight: 600;
-  font-style: italic;
+  font-style: bold;
   letter-spacing: 3px;
 
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   padding: 0px 2rem;
+  border:2px solid black;
+}
+.box{
+  background: rgb(131,58,180);
+  background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(100,21,21,1) 0%, rgba(252,176,69,1) 100%);
+  width:100%;
+  display: flex;
+  box-sizing: border-box;
+  padding: 50px;
+  
 }

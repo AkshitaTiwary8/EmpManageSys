@@ -1,0 +1,76 @@
+<div class="container-fluid ">
+  <div class="row">
+
+    <div class="col-md-6">
+      <div class="card">
+        <div class="text-center">
+          <h1>Sign Up</h1>
+
+          <h6>Register Yourself!!</h6>
+        </div>
+
+        <!-- <form [formGroup]="loginForm" (ngSubmit)="login()"> -->
+        <form [formGroup]="signUpForm" (ngSubmit)="signUp()">
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Full Name</label>
+            <input type="text"
+              formControlName="fullname"
+              class="form-control"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+            />
+            <label for="exampleInputEmail1" class="form-label">Mobile Number</label> 
+            <input
+                type="number"
+                formControlName="mobile"
+                class="form-control"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+              />
+            <label for="exampleInputEmail1" class="form-label">Email Address</label>
+            <input
+              type="email"
+              formControlName="email"
+              class="form-control"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+            />
+<!-- 
+            <span *ngIf="email && email.invalid && email.touched"
+              >Required!!</span
+            > -->
+
+            <div id="emailHelp" class="form-text">
+              We'll never share your email with anyone else.
+            </div>
+
+            <label for="exampleInputPassword1" class="form-label"
+              >Password</label
+            >
+
+            <input
+              type="password"
+              formControlName="password"
+              class="form-control"
+              id="exampleInputPassword1"
+              name="password"
+            />
+
+            <!-- <span *ngIf="password && password.invalid && password.touched"
+              >Required!!</span
+            > -->
+
+          <button
+            type="submit"
+            class="btn btn-primary mt-2"
+        
+          >
+            Login
+          </button>
+          </div>
+        </form>
+        <a style="color:#fff; margin-top:10px" routerLink="/login">New User? Click to signUp!!</a>
+      </div>
+    </div>
+  </div>
+</div>  
